@@ -1,0 +1,30 @@
+POST http://localhost:8800/api/hotels
+Content-Type: application/json
+
+{
+    "name": "Hotel Cintya",
+    "type": "hotel",
+    "city": "Kediri",
+    "address": "somewhere",
+    "distance": "500",
+    "title": "Best Hotel in the City",
+    "desc": "description hotel",
+    "cheapestPrice": 100
+}
+
+###
+PUT http://localhost:8800/api/hotels/63ad2083960e550f60cebee7
+Content-Type: application/json
+
+{
+    "city": "Malang"
+}
+
+###
+GET http://localhost:8800/api/hotels/
+
+###
+GET http://localhost:8800/api/hotels/63aaa22a59c10f4ff6a6e3fc
+
+###
+DELETE  http://localhost:8800/api/hotels/63ad422405691a7d6b5120c5
